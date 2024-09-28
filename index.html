@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Food Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div id="game-container">
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen">
+            <img src="assets/logo-fq.png" alt="Game Logo" class="ninja-logo">
+            <img src="assets/logo.png" alt="Game Logo" class="logo"> <!-- Add logo image -->
+            
+            <div id="user-id-section">
+                <h2>Enter User ID</h2>
+                <input type="text" id="user-id-input" placeholder="Enter your ID">
+                <button id="submit-id-button">Start Game</button>
+            </div>
+            <button id="start-button" class="hidden">Start Game</button>
+            
+            <img src="assets/eu.png" alt="Bottom Image" class="bottom-image">
+        </div>
+
+        <!-- Game Screen -->
+        <div id="game-screen" class="screen hidden">
+            <div id="question-container" class="screen hidden">
+                <p id="question-text" class="question-text"></p>
+                <div id="answers-container" class="answers-container">
+                    <!-- Answer buttons will be dynamically generated here -->
+                </div>
+            </div>
+            <div id="score-bar" class="screen hidden">
+                <span id="score">0</span>
+            </div>
+            <div id="life-counter" class="screen hidden">
+                <img src="assets/heart.png" class="life" id="life-1">
+                <img src="assets/heart.png" class="life" id="life-2">
+                <img src="assets/heart.png" class="life" id="life-3">
+                <!-- An additional life element can be created dynamically in the script if needed -->
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over-screen" class="screen hidden">
+            <img src="assets/ninja-logo.png" alt="Game Logo" class="ninja-logo">
+            <h1>Game Over</h1>
+            <p>Your Score: <span id="final-score"></span></p>
+            <button id="restart-button">Restart Game</button>
+            <img src="assets/eu.png" alt="Bottom Image" class="bottom-image">
+        </div>
+    </div>
+
+    <script src="js/main.js"></script> <!-- Your game logic script -->
+</body>
+</html>

@@ -1,0 +1,237 @@
+[
+    {
+        "question": "Which vitamin is known as the 'sunshine vitamin'?",
+        "answers": ["Vitamin A", "Vitamin B12", "Vitamin C", "Vitamin D"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Which nutrient is essential for muscle repair and growth?",
+        "answers": ["Protein", "Carbohydrate", "Fat", "Vitamin C"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which food is the richest source of omega-3 fatty acids?",
+        "answers": ["Avocado", "Salmon", "Chicken", "Banana"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What mineral is crucial for bone health?",
+        "answers": ["Iron", "Potassium", "Calcium", "Magnesium"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which vitamin helps the body absorb calcium?",
+        "answers": ["Vitamin D", "Vitamin K", "Vitamin A", "Vitamin E"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which type of fat is considered 'bad' for health?",
+        "answers": ["Saturated fat", "Monounsaturated fat", "Polyunsaturated fat", "Trans fat"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Which food is highest in dietary fiber?",
+        "answers": ["White rice", "Chicken breast", "Oats", "Yogurt"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "What is the main role of carbohydrates in the diet?",
+        "answers": ["To build muscles", "To provide energy", "To store fat", "To detoxify the liver"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which vitamin is essential for blood clotting?",
+        "answers": ["Vitamin B6", "Vitamin C", "Vitamin K", "Vitamin A"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which food is considered a complete protein?",
+        "answers": ["Rice", "Quinoa", "Broccoli", "Potato"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which mineral is most important for oxygen transport in the blood?",
+        "answers": ["Zinc", "Iron", "Magnesium", "Selenium"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which vitamin is primarily found in citrus fruits?",
+        "answers": ["Vitamin B12", "Vitamin C", "Vitamin D", "Vitamin E"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which nutrient is essential for red blood cell formation?",
+        "answers": ["Vitamin E", "Vitamin A", "Folic acid", "Vitamin K"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which food is a rich source of antioxidants?",
+        "answers": ["Butter", "Blueberries", "Bread", "Beef"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which vitamin is important for eye health?",
+        "answers": ["Vitamin D", "Vitamin K", "Vitamin A", "Vitamin C"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which nutrient is required to produce hemoglobin?",
+        "answers": ["Calcium", "Iron", "Phosphorus", "Vitamin E"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which food is the best source of dietary potassium?",
+        "answers": ["Banana", "Pasta", "Cheese", "Chicken"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which food is recommended for boosting the immune system?",
+        "answers": ["Pasta", "Garlic", "Butter", "Sugar"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which type of cholesterol is considered 'good'?",
+        "answers": ["LDL", "VLDL", "HDL", "Triglycerides"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which nutrient is essential for healthy skin?",
+        "answers": ["Protein", "Vitamin E", "Calcium", "Sodium"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which vitamin is necessary for collagen production?",
+        "answers": ["Vitamin B1", "Vitamin B12", "Vitamin C", "Vitamin D"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which nutrient is primarily responsible for energy storage?",
+        "answers": ["Fat", "Protein", "Carbohydrate", "Vitamin D"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin can be synthesized by the human body when exposed to sunlight?",
+        "answers": ["Vitamin A", "Vitamin B6", "Vitamin C", "Vitamin D"],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Which nutrient is found in high amounts in green leafy vegetables?",
+        "answers": ["Zinc", "Calcium", "Vitamin K", "Magnesium"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which food is a good source of probiotics?",
+        "answers": ["Yogurt", "Olive oil", "Chicken", "Apples"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which nutrient deficiency can cause anemia?",
+        "answers": ["Calcium", "Sodium", "Iron", "Potassium"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which vitamin helps in preventing scurvy?",
+        "answers": ["Vitamin D", "Vitamin C", "Vitamin B12", "Vitamin A"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which mineral is vital for proper thyroid function?",
+        "answers": ["Iron", "Iodine", "Calcium", "Sodium"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which vitamin is essential for pregnant women to prevent neural tube defects?",
+        "answers": ["Vitamin A", "Vitamin C", "Folic acid", "Vitamin K"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which food is a rich source of vitamin B12?",
+        "answers": ["Nuts", "Cereals", "Eggs", "Spinach"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which type of nutrient is primarily found in meat and fish?",
+        "answers": ["Carbohydrate", "Protein", "Fat", "Fiber"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which vitamin is known for its antioxidant properties?",
+        "answers": ["Vitamin E", "Vitamin K", "Vitamin D", "Vitamin B6"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which food is considered a high-quality plant protein?",
+        "answers": ["Soybeans", "Apples", "Potatoes", "Cheese"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which food is the best source of vitamin A?",
+        "answers": ["Carrots", "Pasta", "Bread", "Oranges"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which nutrient plays a key role in maintaining healthy nerve function?",
+        "answers": ["Vitamin A", "Vitamin D", "Vitamin B12", "Vitamin K"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which food is known to lower bad cholesterol levels?",
+        "answers": ["Butter", "Olive oil", "White bread", "Fried foods"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which nutrient is essential for maintaining fluid balance in the body?",
+        "answers": ["Calcium", "Iron", "Sodium", "Vitamin B6"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which food is a rich source of dietary magnesium?",
+        "answers": ["Brown rice", "Chicken", "Milk", "Cucumber"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which vitamin is known to help improve iron absorption?",
+        "answers": ["Vitamin K", "Vitamin D", "Vitamin C", "Vitamin B2"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which nutrient is the primary source of energy for the brain?",
+        "answers": ["Protein", "Fat", "Glucose", "Fiber"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which mineral is important for maintaining healthy blood pressure?",
+        "answers": ["Sodium", "Potassium", "Calcium", "Iron"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which food group is the best source of complex carbohydrates?",
+        "answers": ["Fruits", "Vegetables", "Whole grains", "Dairy"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which nutrient is vital for proper heart function?",
+        "answers": ["Iron", "Potassium", "Magnesium", "Zinc"],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which vitamin is important for maintaining good vision?",
+        "answers": ["Vitamin K", "Vitamin B6", "Vitamin A", "Vitamin E"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which nutrient is essential for maintaining healthy hair and nails?",
+        "answers": ["Protein", "Calcium", "Vitamin B12", "Iron"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which food is considered the best source of healthy fats?",
+        "answers": ["Bacon", "Cheese", "Almonds", "Margarine"],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which mineral is essential for nerve and muscle function?",
+        "answers": ["Sodium", "Magnesium", "Iron", "Iodine"],
+        "correctAnswer": 1
+    }
+]
