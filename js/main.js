@@ -4,15 +4,25 @@ let currentQuestionIndex = 0;
 let questions = [];
 let userId = '';
 const lifeUpThreshold = 10; // Points needed to earn an extra life
+const questionChangeDelay = 3000; // 3 seconds delay for each question change
 
 // Load Questions from JSON
 async function loadQuestions() {
     try {
         const response = await fetch('questions.json');
         questions = await response.json();
+        shuffleQuestions();
         startGame();
     } catch (error) {
         console.error("Error loading questions:", error);
+    }
+}
+
+// Shuffle the questions array
+function shuffleQuestions() {
+    for (let i = questions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [questions[i], questions[j]] = [questions[j], questions[i]];
     }
 }
 
@@ -24,7 +34,14 @@ window.onload = function () {
         document.getElementById('user-id-section').classList.add('hidden');
         document.getElementById('start-button').classList.remove('hidden');
     }
+    updateHighScoreDisplay(); // Show high score on main screen
 };
+
+// Update high score display based on stored value
+function updateHighScoreDisplay() {
+    const highScore = localStorage.getItem(`${userId}-highscore`) || 0;
+    document.getElementById('high-score-text').innerText = `High Score: ${highScore}`;
+}
 
 // Event Listeners for Game Start
 document.getElementById('submit-id-button').addEventListener('click', () => {
@@ -33,6 +50,7 @@ document.getElementById('submit-id-button').addEventListener('click', () => {
         localStorage.setItem('userId', userId);
         document.getElementById('user-id-section').classList.add('hidden');
         document.getElementById('start-button').classList.remove('hidden');
+        updateHighScoreDisplay(); // Show high score when the user is set
     }
 });
 
@@ -71,33 +89,52 @@ function showQuestion() {
         const answerButton = document.createElement('button');
         answerButton.className = 'answer-button';
         answerButton.innerText = answer;
-        answerButton.addEventListener('click', () => checkAnswer(index));
+        answerButton.addEventListener('click', () => checkAnswer(index, answerButton));
         answersContainer.appendChild(answerButton);
     });
+
+
 }
 
-function checkAnswer(selectedIndex) {
+function checkAnswer(selectedIndex, selectedButton) {
     const correctIndex = questions[currentQuestionIndex].correctAnswer;
+
+    // Highlight buttons with colors based on correctness
+    const buttons = document.querySelectorAll('.answer-button');
+    buttons.forEach((button, index) => {
+        if (index === correctIndex) {
+            button.classList.add('correct');  // Make the correct button green
+        } else if (index === selectedIndex) {
+            button.classList.add('incorrect'); // Make the wrong button red
+        }
+    });
+
     if (selectedIndex === correctIndex) {
         score += 10; // Increment score by 10 for each correct answer
-        // if (score % lifeUpThreshold === 0 && lives < 4) {
-        //     lives++;  // Award extra life every 10 points
-        //     updateLives();
-        // }
     } else {
         loseLife();
     }
 
     updateScore();
-    currentQuestionIndex++;
-    showQuestion();
+        // Automatically move to the next question after 3 seconds
+        setTimeout(() => {
+            // No matter if a selection was made or not, advance the question
+            currentQuestionIndex++;
+            showQuestion();
+        }, questionChangeDelay);
 }
 
 function loseLife() {
     lives--;
     updateLives();
     if (lives < 1) {
-        endGame();
+        
+        setTimeout(() => {
+            // No matter if a selection was made or not, advance the question
+            // currentQuestionIndex++;
+            // showQuestion();
+            endGame();
+        }, questionChangeDelay);
     }
 }
 
@@ -120,11 +157,20 @@ function updateLives() {
 }
 
 function endGame() {
-    
     document.getElementById('game-screen').classList.add('hidden');
     document.getElementById('game-over-screen').classList.remove('hidden');
+    document.getElementById('question-container').classList.add('hidden');
+    document.getElementById('life-counter').classList.add('hidden');
+    document.getElementById('score-bar').classList.add('hidden');
     document.getElementById('final-score').innerText = `Final Score: ${score}`;
-    localStorage.setItem(`${userId}-score`, score);
+     // Check if the current score is higher than the stored high score
+     const highScore = parseInt(localStorage.getItem(`${userId}-highscore`) || 0);
+     if (score > highScore) {
+         localStorage.setItem(`${userId}-highscore`, score);
+     }
+ 
+     localStorage.setItem(`${userId}-score`, score);
+     updateHighScoreDisplay(); // Update high score display when the game ends
 }
 
 document.getElementById('restart-button').addEventListener('click', () => {

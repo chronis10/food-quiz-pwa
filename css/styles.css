@@ -25,6 +25,7 @@ html, body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    top:0px;
 }
 
 #start-screen h1, #game-over-screen h1 {
@@ -186,4 +187,29 @@ html, body {
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+
+.correct {
+    background-color: green;
+    color: white;
+}
+.incorrect {
+    background-color: red;
+    color: white;
+}
+
+#high-score-section {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    margin-top: 50px;        /* Add some space above if needed */
+}
+
+/* Style the high score text */
+#high-score-text {
+    font-size: 24px;         /* Increase font size */
+    font-weight: bold;       /* Make the text bold */
+    color: #fffafa;             /* Change the color as needed */
+    font-family: sans-serif; /* Change the font family as needed */
 }
