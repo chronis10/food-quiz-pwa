@@ -168,7 +168,7 @@ html, body {
 .logo, .ninja-logo, .bottom-image {
     display: block;
     margin: 20px auto;
-    padding-top: 80px;
+    
 }
 
 .logo {
@@ -176,6 +176,7 @@ html, body {
 }
 
 .ninja-logo {
+    padding-top: 80px;
     width: 200px;
 }
 
