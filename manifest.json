@@ -1,7 +1,7 @@
 
 {
-    "name": "Food Ninja",
-    "short_name": "FoodNinja",
+    "name": "Food Quiz",
+    "short_name": "Food Quiz",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",

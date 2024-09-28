@@ -1,5 +1,5 @@
 /* service-worker.js */
-const CACHE_NAME = 'food-ninja-cache-v1';
+const CACHE_NAME = 'food-quiz-cache-v1';
 const urlsToCache = [
   '/',
   '/index.html',
